@@ -1,0 +1,46 @@
+---
+import FAQItem from './FAQItem.astro';
+---
+
+<section id="faq" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <div class="container mx-auto max-w-4xl">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Pertanyaan yang Sering Diajukan</h2>
+      <p class="text-lg text-gray-600">
+        Jawaban dari pertanyaan umum seputar layanan pembuatan website kami.
+      </p>
+    </div>
+    
+    <div class="space-y-4">
+      <FAQItem 
+        question="Berapa lama proses pembuatan website?" 
+        answer="Waktu pengerjaan website bervariasi tergantung pada kompleksitas proyeknya. Untuk website sederhana biasanya membutuhkan waktu 1-2 minggu, sedangkan untuk website yang lebih kompleks bisa memakan waktu 4-8 minggu. Kami akan memberikan estimasi waktu yang lebih akurat setelah berdiskusi tentang kebutuhan spesifik Anda."
+      />
+      
+      <FAQItem 
+        question="Apakah saya bisa mengupdate konten website sendiri?" 
+        answer="Ya, kami menyediakan CMS (Content Management System) yang user-friendly sehingga Anda dapat dengan mudah mengelola dan memperbarui konten website secara mandiri. Kami juga akan memberikan panduan singkat tentang cara menggunakan CMS tersebut."
+      />
+      
+      <FAQItem 
+        question="Apakah harga sudah termasuk domain dan hosting?" 
+        answer="Ya, semua paket sudah termasuk biaya domain dan hosting untuk tahun pertama. Setelah tahun pertama, ada biaya pembaruan tahunan yang relatif terjangkau untuk mempertahankan domain dan hosting Anda."
+      />
+      
+      <FAQItem 
+        question="Apakah website yang dibuat responsif untuk mobile?" 
+        answer="Tentu, semua website yang kami buat 100% responsif dan akan tampil optimal di semua perangkat - desktop, tablet, dan smartphone. Kami menerapkan pendekatan mobile-first untuk memastikan pengalaman pengguna yang sempurna di semua ukuran layar."
+      />
+      
+      <FAQItem 
+        question="Bagaimana jika saya ingin menambah fitur di kemudian hari?" 
+        answer="Kami sangat fleksibel untuk pengembangan bertahap. Anda dapat menambahkan fitur baru ke website yang sudah ada kapan saja. Kami akan memberikan penawaran terpisah untuk fitur tambahan sesuai dengan kompleksitas dan cakupan pekerjaannya."
+      />
+      
+      <FAQItem 
+        question="Bagaimana dengan dukungan teknis setelah website selesai?" 
+        answer="Kami menyediakan dukungan teknis sesuai dengan paket yang Anda pilih (2, 6, atau 12 bulan). Setelah periode tersebut, Anda dapat memilih untuk memperpanjang dukungan teknis dengan biaya bulanan atau tahunan yang terjangkau."
+      />
+    </div>
+  </div>
+</section>

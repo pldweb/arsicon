@@ -1,0 +1,58 @@
+---
+export interface Props {
+  title: string;
+  price: string;
+  description: string;
+  features: string[];
+  featured: boolean;
+  btnText: string;
+}
+
+const { title, price, description, features, featured, btnText } = Astro.props;
+---
+
+<div class={`rounded-lg shadow-lg overflow-hidden ${featured ? 'border-2 border-blue-500 transform scale-105 md:-mt-4' : 'border border-gray-200'}`}>
+  <div class={`px-6 py-8 ${featured ? 'bg-blue-50' : 'bg-white'}`}>
+    <div class="text-center">
+      <h3 class="text-2xl font-bold text-gray-900">{title}</h3>
+      <div class="mt-4 flex justify-center">
+        <span class="text-4xl font-extrabold text-gray-900">Rp {price}</span>
+      </div>
+      <p class="mt-4 text-sm text-gray-600">{description}</p>
+    </div>
+  </div>
+  
+  <div class="border-t border-gray-200">
+    <div class="px-6 py-6 sm:px-8">
+      <ul class="space-y-4">
+        {features.map(feature => (
+          <li class="flex items-start">
+            <div class="flex-shrink-0">
+              <svg class="h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <p class="ml-3 text-sm text-gray-700">{feature}</p>
+          </li>
+        ))}
+      </ul>
+      
+      <div class="mt-8">
+        <a 
+          href="#kontak" 
+          class={`w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md ${featured 
+            ? 'text-white bg-blue-600 hover:bg-blue-700' 
+            : 'text-blue-600 bg-white border-blue-600 hover:bg-blue-50'}`}
+        >
+          {btnText}
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  {featured && (
+    <div class="absolute top-0 right-0 -mt-3 -mr-3 px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full">
+      Popular
+    </div>
+  )}
+</div>

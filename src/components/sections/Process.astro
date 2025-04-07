@@ -1,0 +1,52 @@
+---
+import ProcessStep from './ProcessStep.astro';
+---
+
+<section id="proses" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <div class="container mx-auto max-w-7xl">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Proses Pembuatan Website</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Kami memiliki proses yang terstruktur untuk memastikan website yang Anda dapatkan sesuai dengan kebutuhan dan harapan.
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+      <ProcessStep 
+        number="01" 
+        title="Konsultasi Awal" 
+        description="Kami akan berdiskusi mengenai kebutuhan bisnis Anda, target audience, dan tujuan dari website yang akan dibuat."
+      />
+      
+      <ProcessStep 
+        number="02" 
+        title="Perencanaan & Wireframing" 
+        description="Menyusun struktur website dan membuat wireframe untuk memvisualisasikan tata letak sebelum proses desain dimulai."
+      />
+      
+      <ProcessStep 
+        number="03" 
+        title="Desain UI/UX" 
+        description="Membuat desain visual yang menarik dengan fokus pada pengalaman pengguna yang optimal dan sesuai dengan brand Anda."
+      />
+      
+      <ProcessStep 
+        number="04" 
+        title="Pengembangan" 
+        description="Tahap pembuatan website dengan mengimplementasikan desain dan fungsionalitas yang telah disepakati."
+      />
+      
+      <ProcessStep 
+        number="05" 
+        title="Pengujian & QA" 
+        description="Memastikan semua fitur berfungsi dengan baik, website responsif, dan bebas dari error sebelum diluncurkan."
+      />
+      
+      <ProcessStep 
+        number="06" 
+        title="Peluncuran & Dukungan" 
+        description="Meluncurkan website Anda dan memberikan dukungan teknis untuk memastikan website berjalan lancar."
+      />
+    </div>
+  </div>
+</section>

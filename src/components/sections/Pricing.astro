@@ -1,0 +1,77 @@
+---
+import PricingCard from './PricingCard.astro';
+---
+
+<section id="harga" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="container mx-auto max-w-7xl">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Paket Harga Terjangkau</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Pilih paket yang sesuai dengan kebutuhan dan budget bisnis Anda. Semua paket sudah termasuk layanan lengkap.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <PricingCard 
+        title="BASIC" 
+        price="2.500.000" 
+        description="Website sederhana untuk bisnis kecil yang baru memulai perjalanan digital."
+        features={[
+          "5 Halaman Website",
+          "Desain Responsif",
+          "Optimasi SEO Dasar",
+          "Form Kontak",
+          "Hosting & Domain 1 Tahun",
+          "Support 2 Bulan"
+        ]}
+        featured={false}
+        btnText="Pilih Paket"
+      />
+      
+      <PricingCard 
+        title="BUSINESS" 
+        price="4.500.000" 
+        description="Solusi lengkap untuk bisnis yang ingin tampil profesional secara online."
+        features={[
+          "10 Halaman Website",
+          "Desain Premium Responsif",
+          "Optimasi SEO Lengkap",
+          "CMS untuk Kelola Konten",
+          "Integrasi Media Sosial",
+          "Hosting & Domain 1 Tahun",
+          "Support 6 Bulan"
+        ]}
+        featured={true}
+        btnText="Pilih Paket"
+      />
+      
+      <PricingCard 
+        title="ENTERPRISE" 
+        price="8.500.000" 
+        description="Solusi komprehensif untuk perusahaan dengan kebutuhan kompleks."
+        features={[
+          "20+ Halaman Website",
+          "Desain Custom Premium",
+          "Optimasi SEO Profesional",
+          "CMS Advanced",
+          "Integrasi Sistem & API",
+          "E-commerce Ready",
+          "Hosting & Domain 1 Tahun",
+          "Support 12 Bulan"
+        ]}
+        featured={false}
+        btnText="Pilih Paket"
+      />
+    </div>
+    
+    <div class="mt-12 text-center">
+      <p class="text-gray-600 mb-4">Butuh solusi custom sesuai kebutuhan khusus?</p>
+      <a href="#kontak" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+        Hubungi kami untuk penawaran khusus
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
