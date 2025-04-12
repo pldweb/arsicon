@@ -1,19 +1,77 @@
 ---
 export interface Props {
   title: string;
+  seo_title: string;
+  seo_description: string;
+  seo_domain: string;
+  seo_image: string;
 }
 
 const { title } = Astro.props;
+const { seo_title } = Astro.props;
+const { seo_description } = Astro.props;
+const { seo_domain } = Astro.props;
+const { seo_image } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="id">
   <head>
+    <title>{title}</title>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <meta name="theme-color" content="#3b82f6" />
+    <meta name="title" content={seo_title} />
+    <meta name="description" content={seo_description} />
+    <meta name="keywords" content="Digital Agency, Social Agency, Jasa Kelola Instagram, Jasa Branding, Jasa Website" />
+    <meta name="author" content="Muhammad Rivaldi Fanani" />
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="base-url" content={seo_domain}>
+    <meta name="base-domain" content={seo_domain}>
+    <meta itemprop="url" content={seo_domain}>
+
+    <meta name="author" content="Muhammad Rivaldi Fanani">
+    <meta name="keywords" content="Digital Agency, Social Agency, Jasa Kelola Instagram, Jasa Branding, Jasa Website">
+
+    <meta itemprop="name" content={seo_title}>
+    <meta itemprop="description" content={seo_description}>
+    <meta itemprop="image" content={seo_image}>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={seo_domain} />
+    <meta property="og:title" content={seo_title} />
+    <meta property="og:description" content={seo_description} />
+    <meta property="og:image" content={seo_image} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={seo_domain} />
+    <meta property="twitter:title" content={seo_title} />
+    <meta property="twitter:description" content={seo_description}/>
+    <meta property="twitter:image" content={seo_image} />
+
+    <meta property="og:title" content={seo_title} />
+    <meta property="og:url" content={seo_domain}/>
+    <meta property="og:description" content={seo_description} />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Rinkweb" />
+
+    <link rel="icon" type="image/png" href={seo_image}>
+
+    <!-- Favicon utama -->
+    <link rel="icon" type="image/png" sizes="32x32" href={seo_image}>
+    <link rel="icon" type="image/png" sizes="16x16" href={seo_image}>
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href={seo_image}>
+
+    <!-- Favicon untuk Android/Chrome -->
+
+    <!-- Google tag (gtag.js) -->
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description" content="Jasa pembuatan website profesional dengan harga terjangkau. Dapatkan website berkualitas untuk bisnis Anda.">
   </head>
