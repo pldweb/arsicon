@@ -1,3 +1,4 @@
+
 ---
 export interface Props {
   title: string;
@@ -68,15 +69,58 @@ const { seo_image } = Astro.props;
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href={seo_image}>
 
-    <!-- Favicon untuk Android/Chrome -->
-
-    <!-- Google tag (gtag.js) -->
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description" content="Jasa pembuatan website profesional dengan harga terjangkau. Dapatkan website berkualitas untuk bisnis Anda.">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="img/png" />
+    <!--====== Animate Css ======-->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--====== Slick Slider ======-->
+    <link rel="stylesheet" href="css/slick.min.css" />
+    <!--====== Nice Select ======-->
+    <link rel="stylesheet" href="css/nice-select.min.css" />
+    <!--====== Font Awesome ======-->
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
+    <!--====== Flaticon ======-->
+    <link rel="stylesheet" href="fonts/flaticon/css/flaticon.css" />
+    <!--====== Lity CSS ======-->
+    <link rel="stylesheet" href="css/lity.min.css" />
+    <!--====== Main Css ======-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--====== Responsive CSS ======-->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+
   </head>
   <body class="font-sans bg-white">
+
     <slot />
+
+     <!--====== Jquery ======-->
+     <script type="module" src="js/jquery-3.6.0.min.js"></script>
+     <!--====== Bootstrap ======-->
+     <script type="module" src="js/bootstrap.min.js"></script>
+     <!--====== Slick slider ======-->
+     <script type="module" src="js/slick.min.js"></script>
+     <!--====== Isotope ======-->
+     <script type="module" src="js/isotope.pkgd.min.js"></script>
+     <!--====== Imagesloaded ======-->
+     <script type="module" src="js/imagesloaded.pkgd.min.js"></script>
+     <!--====== Inview ======-->
+     <script type="module" src="js/jquery.inview.min.js"></script>
+     <!--====== Easypiechart ======-->
+     <script type="module" src="js/jquery.easypiechart.min.js"></script>
+     <!--====== Nice Select ======-->
+     <script type="module" src="js/jquery.nice-select.min.js"></script>
+     <!--====== Lity CSS ======-->
+     <script type="module" src="js/lity.min.js"></script>
+     <!--====== WOW Js ======-->
+     <script type="module" src="js/wow.min.js"></script>
+     <!--====== Main JS ======-->
+     <script type="module" src="js/main.js"></script>
   </body>
 </html>
 

@@ -1,32 +1,32 @@
 ---
+import Preloader from '../components/Preloader.astro';
 import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/sections/Navbar.astro';
-import Hero from '../components/sections/Hero.astro';
-import Features from '../components/sections/Feature.astro';
-import Process from '../components/sections/Process.astro';
-import Pricing from '../components/sections/Pricing.astro';
-import FAQ from '../components/sections/FAQ.astro';
-import CTA from '../components/sections/CTA.astro';
-import Footer from '../components/sections/Footer.astro';
 import "../style/global.css";
+import Navbar from "../components/Navbar.astro";
+import WorkingProcess from "./section/WorkingProcess.astro";
+import About from './section/About.astro';
+import Services from './section/Services.astro';
+import Price from './section/Price.astro';
+import CTA from './section/CTA.astro';
+import Footer from './section/Footer.astro';
 
 ---
 
 <Layout 
-title="Rinkweb| Digital Service"
-seo_description="Rinkweb adalah penyedia digital service yang bergerak dibidang pembuatan website"
-seo_domain="https://rinkweb.id"
-seo_title="Rinkweb - Digital Service"
-seo_image='https://i.imghippo.com/files/BUH9768T.png'
+  title="Rinksite | Digital Service"
+  seo_description="Rinksite adalah penyedia digital service yang bergerak dibidang pembuatan website"
+  seo_domain="https://rinksite.com"
+  seo_title="Rinksite - Digital Service"
+  seo_image='https://i.imghippo.com/files/BUH9768T.png'
 >
-  <Navbar />
+  <Preloader />
   <main>
-    <Hero />
-    <Features />
-    <Process />
-    <Pricing />
-    <FAQ />
+    <Navbar />
+    <WorkingProcess />
+    <About />
+    <Services />
+    <Price />
     <CTA />
+    <Footer />
   </main>
-  <Footer />
 </Layout>
