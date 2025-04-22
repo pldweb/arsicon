@@ -62,10 +62,10 @@
     #. Dark Version
 -----------------------------------------------------------------------------------*/
 /*======= Common =======*/
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700&family=Quicksand:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-	--color-primary: #2667ff;
+	--color-primary: #FFB700;
 	--color-secondary: #0b1460;
 	--color-tertiary: #6ef1b2;
 	--color-body: #5c6185;
@@ -80,9 +80,9 @@
 	--color-white-70: rgba(255, 255, 255, 0.7);
 	--color-dark: #151516;
 	--color-deep-dark: #0b0b0b;
-	--font-nunito: 'Nunito', sans-serif;
-	--font-nunito-sans: 'Nunito Sans', sans-serif;
-	--font-quicksand: 'Quicksand', sans-serif;
+	--font-nunito: 'Montserrat', sans-serif;
+	--font-nunito-sans: 'Montserrat', sans-serif;
+	--font-quicksand: 'Montserrat', sans-serif;
 }
 
 body {

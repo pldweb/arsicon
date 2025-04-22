@@ -1,0 +1,40 @@
+---
+import Navbar from './Navbar.astro';
+
+const menu = [
+  {
+    label: "Home",
+    link: "/",
+  },
+  {
+    label: "About",
+    link: "/about",
+  },
+  {
+    label: "Brands",
+    link: "/",
+    submenu: [
+      { label: "Arsicon Contractor Syariah", link: "/arsicon-contractor-syariah" },
+      { label: "Arsicon Interior", link: "/arsicon-interior" },
+    ],
+  },
+  {
+    label: "Portfolio",
+    link: "/portfolio",
+  },
+  {
+    label: "Partnership",
+    link: "/partnership",
+  },
+  {
+    label: "Contact",
+    link: "/contact",
+  },
+];
+---
+
+<Navbar 
+  logo="/src/assets/logo-arsicon.png"
+  menu={menu}
+  button={{ text: "Let’s Talk", link: "#" }} 
+/>

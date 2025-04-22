@@ -1,143 +1,86 @@
-<header class="template-header absolute-header navbar-left sticky-header">
-    <div class="topbar">
-        <p>Let's make something great together.</p>
-    </div>
-    <div class="container">
-        <div class="header-inner">
-            <div class="header-left">
-                <div class="site-logo">
-                    <a href="index.html">
-                        <img src="" alt="Tilke">
-                    </a>
-                </div>
-                <nav class="nav-menu d-none d-xl-block">
-                    <ul class="primary-menu">
-                        <li>
-                            <a href="index.html">Home</a>
-                            <ul class="submenu">
-                                <li><a href="index.html">Digital Agency</a></li>
-                                <li><a href="index-2.html">SEO Agency</a></li>
-                                <li><a href="index-3.html">Marketing Agency</a></li>
-                                <li><a href="index-4.html">Digital Agency Dark</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="marketing-services.html" class="active">Services</a>
-                            <ul class="submenu">
-                                <li><a href="marketing-services.html">Marketing Services</a></li>
-                                <li><a href="agency-services.html">Agency Services</a></li>
-                                <li><a href="service-details.html">Services Details</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="portfolio.html">Works</a>
-                            <ul class="submenu">
-                                <li><a href="portfolio.html">Works One</a></li>
-                                <li><a href="portfolio-2.html">Works Two</a></li>
-                                <li><a href="portfolio-details.html">Works Details</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="blog-standard.html">Blog</a>
-                            <ul class="submenu">
-                                <li><a href="blog-standard.html">Blog Standard</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Pages</a>
-                            <ul class="submenu">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="faq.html">Faq</a></li>
-                                <li><a href="team.html">Our Team</a></li>
-                                <li><a href="team-details.html">Team Details</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="shop-details.html">Shop Details</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header-right">
-                <ul class="header-extra">
-                    <li class="header-btns d-none d-sm-block">
-                        <a href="#" class="template-btn">
-                            Let’s Talk
-                            <i class="far fa-long-arrow-right"></i>
-                        </a>
-                    </li>
-                    <li class="d-xl-none">
-                        <div class="navbar-toggler">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+---
+// Props
+const {
+  logo = "/images/logo.png",
+  menu = [],
+  button = { text: "Let’s Talk", link: "#" }
+} = Astro.props;
+---
+
+<header class="template-header navbar-left sticky-header">
+  <div class="container">
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="site-logo">
+          <a href="index.html">
+            <img src={logo} class="logo" alt="Logo" />
+          </a>
         </div>
-    </div>
-    <!-- Mobile Menu -->
-    <div class="slide-panel mobile-slide-panel">
-        <div class="panel-overlay"></div>
-        <div class="panel-inner">
-            <div class="panel-logo">
-                <img src="#" alt="">
-            </div>
-            <nav class="mobile-menu">
-                <ul class="primary-menu">
-                    <li>
-                        <a href="index.html">Home</a>
-                        <ul class="submenu">
-                            <li><a href="index.html">SEO Agency</a></li>
-                            <li><a href="index-2.html">Digital Agency</a></li>
-                            <li><a href="index-3.html">Marketing Agency</a></li>
-                            <li><a href="index-4.html">Digital Agency Dark</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="marketing-services.html" class="active">Services</a>
-                        <ul class="submenu">
-                            <li><a href="marketing-services.html">Marketing Services</a></li>
-                            <li><a href="agency-services.html">Agency Services</a></li>
-                            <li><a href="service-details.html">Services Details</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">Works</a>
-                        <ul class="submenu">
-                            <li><a href="portfolio.html">Works One</a></li>
-                            <li><a href="portfolio-2.html">Works Two</a></li>
-                            <li><a href="portfolio-details.html">Works Details</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blog-standard.html">Blog</a>
-                        <ul class="submenu">
-                            <li><a href="blog-standard.html">Blog Standard</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                        <ul class="submenu">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="faq.html">Faq</a></li>
-                            <li><a href="team.html">Our Team</a></li>
-                            <li><a href="team-details.html">Team Details</a></li>
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="shop-details.html">Shop Details</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <a href="#" class="panel-close">
-                <i class="fal fa-times"></i>
+
+        <nav class="nav-menu d-none d-xl-block">
+          <ul class="primary-menu">
+            {menu.map(item => (
+              <li>
+                <a href={item.link} class={item.active ? 'active' : ''}>{item.label}</a>
+                {item.submenu && item.submenu.length > 0 && (
+                  <ul class="submenu">
+                    {item.submenu.map(sub => (
+                      <li><a href={sub.link}>{sub.label}</a></li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-right">
+        <ul class="header-extra">
+          <li class="header-btns d-none d-sm-block">
+            <a href={button.link} class="template-btn">
+              {button.text}
+              <i class="far fa-long-arrow-right"></i>
             </a>
-        </div>
+          </li>
+          <li class="d-xl-none">
+            <div class="navbar-toggler">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="slide-panel mobile-slide-panel">
+    <div class="panel-overlay"></div>
+    <div class="panel-inner">
+      <div class="panel-logo">
+        <img src={logo} alt="Logo" />
+      </div>
+      <nav class="mobile-menu">
+        <ul class="primary-menu">
+          {menu.map(item => (
+            <li>
+              <a href={item.link}>{item.label}</a>
+              {item.submenu && item.submenu.length > 0 && (
+                <ul class="submenu">
+                  {item.submenu.map(sub => (
+                    <li><a href={sub.link}>{sub.label}</a></li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <a href="#" class="panel-close">
+        <i class="fal fa-times"></i>
+      </a>
+    </div>
+  </div>
 </header>

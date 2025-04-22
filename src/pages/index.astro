@@ -3,30 +3,53 @@ import Preloader from '../components/Preloader.astro';
 import Layout from '../layouts/Layout.astro';
 import "../style/global.css";
 import Navbar from "../components/Navbar.astro";
-import WorkingProcess from "./section/WorkingProcess.astro";
-import About from './section/About.astro';
-import Services from './section/Services.astro';
-import Price from './section/Price.astro';
-import CTA from './section/CTA.astro';
-import Footer from './section/Footer.astro';
+import UseNavbar from "../components/UseNavbar.astro";
+
+// import WorkingProcess from "./section/WorkingProcess.astro";
+// import About from './section/About.astro';
+// import Services from './section/Services.astro';
+// import Price from './section/Price.astro';
+// import CTA from './section/CTA.astro';
+// import Footer from './section/Footer.astro';
 
 ---
 
 <Layout 
-  title="Rinksite | Digital Service"
-  seo_description="Rinksite adalah penyedia digital service yang bergerak dibidang pembuatan website"
-  seo_domain="https://rinksite.com"
-  seo_title="Rinksite - Digital Service"
+  title="Arsicon | Kontraktor Syariah Pertama di Indonesia"
+  seo_description="Arsicon adalah penyedia digital service yang bergerak dibidang pembuatan website"
+  seo_domain="https://arsicon.com"
+  seo_title="Arsicon - Digital Service"
   seo_image='https://i.imghippo.com/files/BUH9768T.png'
 >
-  <Preloader />
-  <main>
-    <Navbar />
-    <WorkingProcess />
-    <About />
-    <Services />
-    <Price />
-    <CTA />
-    <Footer />
-  </main>
+  <!-- <Preloader /> -->
+
+  <UseNavbar />
+
+    <main>
+
+        <section class="hero-area">
+            <div class="hero-slider">
+                <div class="single-slider slider-bg-1 d-flex align-items-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-md-10 col-sm-12">
+                                <div class="hero-content text-center">
+                                    <h1 class="title-hero white-color mb-2">Refined Spaces, Timeless Elegance</h1>
+                                    <h4 class="tagline-hero white-color mb-3">Membangun dengan Jujur, Amanah, <br> dan Profesionalisme</h4>
+                                    <p class="description-hero white-color mb-5">Contractor Syariah pertama di indonesia</p>
+                                    <div class="button-two" style="display: flex; gap: 15px; justify-content: center; align-items: center;">
+                                        <a class="btn btn-rounded white-color">Contact Us</a>
+                                        <a class="btn btn-filled">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+    </main>
+    
 </Layout>
