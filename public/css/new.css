@@ -211,7 +211,6 @@ section.padding-section {
 .about-image img {
     width: 100%;
     border-radius: 38px;
-    overflow: hidden;
     max-height: 520px;
     object-fit: cover;
 }
@@ -221,6 +220,67 @@ section.padding-section {
     font-weight: 700;
     color: var(--color-primary);
 }
+
+.card-service-image img.img-fluid{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-service-content {
+    padding: 20px 0;
+}
+
+.card-service-content h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.list-service ul li a {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: var(--color-body);
+    text-decoration: none;
+}
+.list-service ul li a:hover {
+    color: var(--color-primary);
+}
+
+.image-portfolio img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#arsicon-portfolio div[class ^="col-"] {
+    padding: 0 8px;
+}
+
+.surat li {
+    list-style: disc;
+}
+
+.info > div{
+    margin-bottom: 30px;
+}
+.info h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-color: #ced4da !important;
+}
+
+.form-control:focus {
+    border: 1px solid #ced4da !important;
+    border-color: #ced4da !important;
+}
+
 
 @media (min-width: 1200px) {
     .container-fluid {
