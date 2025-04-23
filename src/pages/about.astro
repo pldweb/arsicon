@@ -1,0 +1,82 @@
+---
+import Preloader from '../components/Preloader.astro';
+import Layout from '../layouts/Layout.astro';
+import "../style/global.css";
+import Navbar from "../components/Navbar.astro";
+import UseNavbar from "../components/UseNavbar.astro";
+import Footer from "../components/Footer.astro";
+
+// import WorkingProcess from "./section/WorkingProcess.astro";
+// import About from './section/About.astro';
+// import Services from './section/Services.astro';
+// import Price from './section/Price.astro';
+// import CTA from './section/CTA.astro';
+// import Footer from './section/Footer.astro';
+
+---
+
+<Layout 
+  title="Arsicon | Arsicon Interior Design dan Kontraktor Syariah pertama di Indonesia"
+  seo_description="Arsicon Interior Design dan Kontraktor Syariah pertama di Indonesia"
+  seo_domain="https://arsicon.com"
+  seo_title="Arsicon - Arsicon Interior Design dan Kontraktor Syariah pertama di Indonesia"
+  seo_image="https://i.imghippo.com/files/OoZA1363FK.png"
+>
+  <!-- <Preloader /> -->
+
+  <UseNavbar />
+
+    <main>
+
+        <section id="about-section" style="margin-top: 60px;">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-sm-12">
+                        <div class="section-title text-center mb-5">
+                            <h2 class="title-section black-color">About Us</h2>
+                            <p class="description-section black-color">Arsicon is a digital service provider specializing in website development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                    
+                        <div class="about-description">
+                            <h4 class="title-section black-color other-title mb-3">About PT Arsicon Nuansa Kreatif</h4>
+                            <p>PT Arsicon Nuansa Kreatif represents the evolution of PT Galatic Multi Ekanusa, established in 2018, specializing in  services encompassing interior design, architecture, meticulous engineering planning, construction, and comprehensive MEP solutions for residential, commercial, and public sectors.</p>
+                            <p class="mb-5">With a distinguished portfolio, PT Arsicon excels in adopting diverse design styles ensuring every project embodies timeless elegance and functional sophistication.</p>
+                            <b>Vision</b>
+                            <p class="mb-4">"Striving to be a company of boundless creativity, dedicated to serving our nation, community, families, and faith."</p>
+                            <b>Mission</b>
+                            <p>"Excellence in service to deliver outstanding products for our clients."</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-image">
+                            <img src="/images/whatsapp-image-2024-07-13-at-00.57.42-A1aJe59L2NUzM152.jpeg" alt="About Image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-section" style="margin-top: 60px; margin-bottom: 40px;">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-image">
+                            <img src="/images/1-1-AQEpBnV49GsgG8ey.jpg" alt="About Image" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-description">
+                            <h4 class="title-section black-color other-title mb-3">Our Team</h4>
+                            <p>Arsicon team is a group of skilled professionals with extensive experience in construction, interior design, and architecture. We deliver high-quality results quickly and with excellent service. Our expertise ensures that every project is handled with care and precision, making us a trusted choice for transforming your vision into reality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>

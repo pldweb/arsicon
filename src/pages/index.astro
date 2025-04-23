@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import "../style/global.css";
 import Navbar from "../components/Navbar.astro";
 import UseNavbar from "../components/UseNavbar.astro";
+import Footer from "../components/Footer.astro";
 
 // import WorkingProcess from "./section/WorkingProcess.astro";
 // import About from './section/About.astro';
@@ -15,10 +16,10 @@ import UseNavbar from "../components/UseNavbar.astro";
 ---
 
 <Layout 
-  title="Arsicon | Kontraktor Syariah Pertama di Indonesia"
-  seo_description="Arsicon adalah penyedia digital service yang bergerak dibidang pembuatan website"
+  title="Arsicon | Arsicon Interior Design dan Kontraktor Syariah pertama di Indonesia"
+  seo_description="Arsicon Interior Design dan Kontraktor Syariah pertama di Indonesia"
   seo_domain="https://arsicon.com"
-  seo_title="Arsicon - Digital Service"
+  seo_title="Arsicon - Arsicon Interior Design dan Kontraktor Syariah pertama di Indonesia"
   seo_image="https://i.imghippo.com/files/OoZA1363FK.png"
 >
   <!-- <Preloader /> -->
@@ -34,9 +35,9 @@ import UseNavbar from "../components/UseNavbar.astro";
                         <div class="row justify-content-center">
                             <div class="col-lg-8 col-md-10 col-sm-12">
                                 <div class="hero-content text-center">
-                                    <h1 class="title-hero white-color mb-2">Refined Spaces, Timeless Elegance</h1>
-                                    <h4 class="tagline-hero white-color mb-3">Membangun dengan Jujur, Amanah, <br> dan Profesionalisme</h4>
-                                    <p class="description-hero white-color mb-5">Contractor Syariah pertama di indonesia</p>
+                                    <h1 class="title-hero white-color mb-4">Arsicon Interior Design dan Kontraktor Syariah pertama di Indonesia</h1>
+                                    <h4 class="tagline-hero white-color mb-5">Membangun dengan Jujur, Amanah, <br> dan Profesionalisme</h4>
+                                    <!-- <p class="description-hero white-color mb-5">Contractor Syariah pertama di indonesia</p> -->
                                     <div class="button-two" style="display: flex; gap: 15px; justify-content: center; align-items: center;">
                                         <a class="btn btn-rounded white-color">Contact Us</a>
                                         <a class="btn btn-filled">Get Started</a>
@@ -193,69 +194,7 @@ import UseNavbar from "../components/UseNavbar.astro";
                 </div>
             </div>
         </section>
-
-
-        <footer class="footer-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="footer-logo">
-                            <a href="/index">
-                                <img src="https://i.imghippo.com/files/HF9161wmw.png" alt="Logo" class="logo-footer" />
-                            </a>
-                        </div>
-                        <p class="description-footer white-color mb-4">Arsicon is a digital service provider specializing in website development.</p>
-                        <a href="" class="btn btn-primary btn-footer">Download Theme</a>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="footer-widget">
-                                    <h4 class="white-color">Services</h4>
-                                    <ul class="footer-list">
-                                        <li><a href="#">Interior Design</a></li>
-                                        <li><a href="#">Architecture</a></li>
-                                        <li><a href="#">Construction</a></li>
-                                        <li><a href="#">Project Management</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="footer-widget">
-                                    <h4 class="white-color">Services</h4>
-                                    <ul class="footer-list">
-                                        <li><a href="#">Interior Design</a></li>
-                                        <li><a href="#">Architecture</a></li>
-                                        <li><a href="#">Construction</a></li>
-                                        <li><a href="#">Project Management</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="footer-widget">
-                                    <h4 class="white-color">Services</h4>
-                                    <ul class="footer-list">
-                                        <li><a href="#">Interior Design</a></li>
-                                        <li><a href="#">Architecture</a></li>
-                                        <li><a href="#">Construction</a></li>
-                                        <li><a href="#">Project Management</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row bottom-row mt-6">
-                <div class="bottom-footer w-full">
-                    <div class="flex justify-center align-center text-center w-full">
-                        <p class="white-color">© 2023 Arsicon. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-      
     </main>
     
+    <Footer />
 </Layout>

@@ -1,0 +1,48 @@
+---
+import Preloader from '../components/Preloader.astro';
+import Layout from '../layouts/Layout.astro';
+import "../style/global.css";
+import Navbar from "../components/Navbar.astro";
+import UseNavbar from "../components/UseNavbar.astro";
+import Footer from "../components/Footer.astro";
+
+// import WorkingProcess from "./section/WorkingProcess.astro";
+// import About from './section/About.astro';
+// import Services from './section/Services.astro';
+// import Price from './section/Price.astro';
+// import CTA from './section/CTA.astro';
+// import Footer from './section/Footer.astro';
+
+---
+
+<Layout 
+  title="Arsicon | Arsicon Interior Design dan Kontraktor Syariah pertama di Indonesia"
+  seo_description="Arsicon Interior Design dan Kontraktor Syariah pertama di Indonesia"
+  seo_domain="https://arsicon.com"
+  seo_title="Arsicon - Arsicon Interior Design dan Kontraktor Syariah pertama di Indonesia"
+  seo_image="https://i.imghippo.com/files/OoZA1363FK.png"
+>
+  <!-- <Preloader /> -->
+
+  <UseNavbar />
+
+    <main>
+
+        <section id="arsicon-interior-section" style="margin-top: 60px;">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-sm-12">
+                        <div class="section-title text-center mb-5">
+                            <h2 class="title-section black-color">Our services</h2>
+                            <p class="description-section black-color">Our team is dedicated to providing solutions that fit your needs and make your life easier. Discover how we can support you and make your goals a reality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
