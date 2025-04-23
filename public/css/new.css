@@ -64,8 +64,24 @@ p.description-hero {
     font-weight: 300;
 }
 
+.title-section {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.description-section {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-body);
+}
+
 .white-color {
     color: white !important;
+}
+
+.black-color {
+    color: var(--body-color) !important;
 }
 
 .mb-10 {
@@ -108,4 +124,88 @@ a.btn.btn-filled {
 
 .template-header .nav-menu li .submenu {
     width: max-content;
+}
+
+section.padding-section {
+    padding: 100px 0;
+}
+
+
+.service-icon img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.service-description {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.medium-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.h-potrait img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-slide div[class ^="col-"] {
+    padding: 0 8px;
+
+}
+
+.footer-area {
+    background-color: #444444;
+    padding: 100px 0 0;
+}
+
+.footer-area h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-area a {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.logo-footer {
+    max-height: 50px;   
+}
+
+.bottom-footer {
+    background-color: #333333;
+    padding: 20px 0;
+    margin-top: 70px;
+}
+
+.btn-footer {
+    padding: 10px 20px;
+    background-color: var(--body-color);
+    color: white;
+    border-radius: 40px;
+    font-weight: 400;
+    border: 2px solid white;
+}
+.btn-footer:hover {
+    background-color: white;
+    color: var(--body-color);
+    border: 2px solid var(--body-color);
+}
+
+@media (min-width: 1200px) {
+    .container-fluid {
+        max-width: 1100px;
+    }
+
+
 }
