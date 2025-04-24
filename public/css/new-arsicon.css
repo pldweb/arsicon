@@ -358,3 +358,7 @@ footer {
 .mobile-slide-panel .mobile-menu li a {
     color: var(--black-color) !important;
 }
+
+.template-header .nav-menu li .submenu li a {
+    color: var(--black-color) !important;
+}
