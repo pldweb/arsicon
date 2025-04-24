@@ -350,3 +350,7 @@ section.padding-section {
         font-weight: 400;
     }
 }
+
+footer {
+    background-color: #141414 !important;
+}
