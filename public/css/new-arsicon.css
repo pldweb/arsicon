@@ -354,3 +354,7 @@ section.padding-section {
 footer {
     background-color: #141414 !important;
 }
+
+.mobile-slide-panel .mobile-menu li a {
+    color: var(--black-color) !important;
+}
