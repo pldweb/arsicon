@@ -74,78 +74,86 @@ const { seo_image } = Astro.props;
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="img/favicon.ico" type="img/png" />
-    <!--====== Animate Css ======-->
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!--====== Slick Slider ======-->
-    <link rel="stylesheet" href="css/slick.min.css" />
-    <!--====== Nice Select ======-->
-    <link rel="stylesheet" href="css/nice-select.min.css" />
-    <!--====== Font Awesome ======-->
-    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
-    <!--====== Flaticon ======-->
-    <link rel="stylesheet" href="fonts/flaticon/css/flaticon.css" />
-    <!--====== Lity CSS ======-->
-    <link rel="stylesheet" href="css/lity.min.css" />
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+	<!-- carousel CSS -->
+	<link rel="stylesheet" href="/css/owl.carousel.min.css">
+	<!-- animate CSS -->
+	<link rel="stylesheet" href="/css/animate.css">
+	<!-- animated-text CSS -->
+	<link rel="stylesheet" href="/css/animated-text.css">
+	<!-- font-awesome CSS -->
+	<link rel="stylesheet" href="/css/all.min.css">
+	<!-- font-flaticon CSS -->
+	<link rel="stylesheet" href="/css/flaticon.css">
+	<!-- theme-default CSS -->
+	<link rel="stylesheet" href="/css/theme-default.css">
+	<!-- meanmenu CSS -->
+	<link rel="stylesheet" href="/css/meanmenu.min.css">
+	<!-- transitions CSS -->
+	<link rel="stylesheet" href="/css/owl.transitions.css">
+	<!-- venobox CSS -->
+	<link rel="stylesheet" href="/css/venobox.css">
 
-    <!-- <link rel="stylesheet" href="css/arsicon-syariah.css" /> -->
+	<!-- bootstrap icons -->
+	<link rel="stylesheet" href="/css/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="/css/style-arsicon.css">
 
-    <!--====== Main Css ======-->
-    <link rel="stylesheet" href="css/style.css" />
-
-    <!-- <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" /> -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <!--====== Responsive CSS ======-->
-    <link rel="stylesheet" href="css/responsive.css" />
-
-    <link rel="stylesheet" href="css/_slug_.h-YUlnzt.css">
-
-    <link rel="stylesheet" href="css/theme-default.css" />
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/css/style.css">
 
 
-    <link rel="stylesheet" href="css/new.css" />
+	<!-- responsive CSS -->
+	<link rel="stylesheet" href="/css/responsive.css">
 
-    <!-- <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" onload="AOS.init();"></script> -->
+  <script src="/css/modernizr-3.5.0.min.js" is:inline></script>
+
+  <link rel="stylesheet" href="css/new-arsicon.css" />
+
+  <!-- <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" onload="AOS.init();"></script> -->
 
 
   </head>
-  <body class="bg-white">
+  <body class="">
 
     <slot />
+  
+	<!-- jquery js -->
+	<script src="/js/jquery-3.6.2.min.js" is:inline></script>
 
-    <a href="https://wa.me/6285777333305" class="float" target="_blank">
-      <i class="fa fa-whatsapp my-float"></i>
-    </a>
-
-     <!--====== Jquery ======-->
-  <script src="/js/jquery-3.6.0.min.js" is:inline></script>
-  <!--====== Bootstrap ======-->
   <script src="/js/bootstrap.min.js" is:inline></script>
-  <!--====== Slick slider ======-->
-  <script src="/js/slick.min.js" is:inline></script>
-  <!--====== Isotope ======-->
-  <script src="/js/isotope.pkgd.min.js" is:inline></script>
-  <!--====== Imagesloaded ======-->
+
+  <script src="/js/owl.carousel.min.js" is:inline></script>
+
+  <script src="/js/jquery.counterup.min.js" is:inline></script>
+
+  <script src="/js/waypoints.min.js" is:inline></script>
+
+  <script src="/js/wow.js" is:inline></script>
+
   <script src="/js/imagesloaded.pkgd.min.js" is:inline></script>
-  <!--====== Inview ======-->
-  <script src="/js/jquery.inview.min.js" is:inline></script>
-  <!--====== Easypiechart ======-->
-  <script src="/js/jquery.easypiechart.min.js" is:inline></script>
-  <!--====== Nice Select ======-->
-  <script src="/js/jquery.nice-select.min.js" is:inline></script>
-  <!--====== Lity ======-->
-  <script src="/js/lity.min.js" is:inline></script>
-  <!--====== WOW Js ======-->
-  <script src="/js/wow.min.js" is:inline></script>
-  <!--====== Main JS ======-->
+
+  <script src="/js/venobox.js" is:inline></script>
+
+	<script src="/js/animated-text.js" is:inline></script>
+
+  <script src="/js/venobox.min.js" is:inline></script>
+
+  <script src="/js/isotope.pkgd.min.js" is:inline></script>
+
+  <script src="/js/jquery.meanmenu.js" is:inline></script>
+
+	<script src="/js/jquery.scrollUp.js" is:inline></script>
+
+	<script src="/js/jquery.barfiller.js" is:inline></script>
+
+	<script src="/js/popper.min.js" is:inline></script>
+
+	<script src="/js/theme.js" is:inline></script>
+
   <script src="/js/main.js" is:inline></script>
+
 
   </body>
 </html>
@@ -163,5 +171,6 @@ const { seo_image } = Astro.props;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #030303;
   }
 </style>

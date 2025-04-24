@@ -1,0 +1,60 @@
+---
+// src/components/HeroSlider.astro
+// import Icon from '@astropub/icons';
+
+interface Slide {
+  id: number;
+  title: string;
+  subtitle: string;
+  image: string;
+  link: string;
+}
+
+const slides: Slide[] = [
+  {
+    id: 1,
+    title: "Membangun dengan Jujur, Amanah, dan Profesionalisme",
+    subtitle: "Arsicon Contractor Syariah",
+    image: "/images/arsicon-syariah/hero-Img-1.png",
+    link: "/service-details"
+  },
+];
+---
+
+<div class="hero-slides owl-carousel">
+  {slides.map((slide) => (
+    <div class="slider-area one d-flex align-items-center">
+      <div class="container-fluid">
+        <div class="row bor-der align-items-center">
+          <div class="col-lg-6 col-sm-12 col-xs-12">
+            <div class="single-slider-left" data-animation="fadeInUp" data-delay="100ms">
+              <div class="single-slider">
+                <div class="slider-content">
+                  <div class="slider-title">
+                    <h4>{slide.subtitle}</h4>
+                    <h1 set:html={slide.title} />
+                  </div>
+                  {/* <div class="slider-button">
+                    <a href={slide.link}>View Details</a>
+                  </div> */}
+                </div>
+                <div class="slider-number">
+                  <h1>{String(slide.id).padStart(2, '0')}</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 col-xs-12">
+            <div class="singles-sliders" data-animation="fadeInDown" data-delay="100ms">
+              <div class="slider-content">
+                <div class="slider-thumb">
+                  <img src={slide.image} alt="" width="600" height="400" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
