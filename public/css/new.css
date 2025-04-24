@@ -150,6 +150,7 @@ section.padding-section {
 .medium-title {
     font-size: 30px;
     font-weight: 700;
+    color: var(--black-color) !important;
 }
 
 .h-potrait img {
