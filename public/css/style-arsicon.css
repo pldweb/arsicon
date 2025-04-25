@@ -2501,6 +2501,7 @@ ul.social-box li a:hover {
 
 .about-area.one .about-thumb img {
     width: 100%;
+    max-height: 450px;
 }
 
 .about-area.one .about-button {
