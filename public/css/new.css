@@ -334,6 +334,12 @@ section.padding-section {
         max-height: 273px;
         overflow: hidden;
     }
+
+    .service-icon {
+        max-height: 356px;
+        overflow: hidden;
+        border-radius: 17px;
+    }
 }
 
 
