@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-    max-height: 50px;
+    max-height: 70px;
 }
 
 section.hero-area {
@@ -361,4 +361,8 @@ footer {
 
 .template-header .nav-menu li .submenu li a {
     color: var(--black-color) !important;
+}
+
+.template-header.navbar-left .nav-menu {
+    margin-left: 180px;
 }

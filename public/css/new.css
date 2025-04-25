@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-    max-height: 50px;
+    max-height: 70px;
 }
 
 section.hero-area {
@@ -186,7 +186,7 @@ section.padding-section {
 }
 
 .logo-footer {
-    max-height: 50px;   
+    max-height: 80px;   
 }
 
 .bottom-footer {
@@ -311,8 +311,6 @@ section.padding-section {
 }
 
 
-
-
 @media (min-width: 1200px) {
     .container-fluid {
         max-width: 1100px;
@@ -350,4 +348,8 @@ section.padding-section {
         font-size: 20px;
         font-weight: 400;
     }
+}
+
+.template-header.navbar-left .nav-menu {
+    margin-left: 180px;
 }
