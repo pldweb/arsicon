@@ -64,11 +64,15 @@ export default function HeroSlider() {
                 style={{ backgroundImage: `url(${slide.image})` }}
               >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
-                <div className="p-6 rounded-lg text-white text-center max-w-3xl"
+                <div className="p-6 rounded-lg text-white text-center max-w-3xl z-10"
                      data-aos="fade-up">
                   <h1 className="text-4xl md:text-6xl font-bold mb-4">{slide.title}</h1>
                   <p className="text-lg md:text-2xl mb-6">{slide.subtitle}</p>
-                  <button className="bg-transparent border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#030303] transition">
+                  <button onClick={() => {
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    window.location.href = 'https://wa.me/6285777333305?text=Halo%20Arsicon%2C%20saya%20mau%20diskusi%20tentang%20interior%20rumah%20saya.'; // Replace with your WhatsApp link
+                  }} className="bg-transparent border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-[#030303] transition">
                     {slide.button}
                   </button>
                 </div>
