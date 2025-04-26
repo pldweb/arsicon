@@ -22,69 +22,157 @@ import Slider from "../components/Slider.astro";
 
         <SlideShow client:load/>
 
-        <section id="our-services" class="padding-section">
+        <section id="our-services" class="padding-section" style="padding: 50px 0;">
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
-                        <div class="section-title text-center mb-5">
-                            <h2 class="title-section black-color">Our Services</h2>
+                        <div class="section-title text-center" style="margin-bottom: 90px;">
+                            <h2 class="title-section black-color mb-3">Our Services</h2>
                             <p class="description-section black-color">Dengan pengalaman lebih dari 6 tahun, Arsicon menghadirkan keahlian di bidang desain interior, arsitektur, <br>dan konstruksi untuk menciptakan ruang yang penuh karakter dan fungsi</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- <Slider /> -->
-                <div class="row justify-content-center">
-                    <div class="row service-image flex justify-content-center">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-12">
-                            <div class="single-service text-center mb-4">
-                                <div class="service-icon">
-                                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1006,h=720,fit=crop/A1aJePezkpfD2jEO/a_living_room_inspired_by_japanese_style_with_a_tea_ceremony_set_and_ikebana_flowers.-m6LJ8bV2r7ieRV8l.webp" alt="Service Icon" />
-                                </div>
-                            </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-12">
+                        <div class="service-description">
+                            <h2 class="medium-title black-color mb-2">Interior & Build</h2>
+                            <p class="medium-description black-color mb-3">Wujudkan ruang impian Anda bersama kami, dengan sentuhan desain modern klasik yang elegan dan nuansa alami yang menenangkan</p>
+                            <p class="medium-description black-color mb-3">Kami percaya bahwa setiap ruang memiliki cerita yang unik, dan kami berkomitmen untuk membantu Anda menceritakan kisah tersebut melalui desain yang tepat.</p>
+                            <a href="" class="btn btn-primary">Hubungi Kami</a>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-12">
-                            <div class="single-service text-center mb-4">
-                                <div class="service-icon">
-                                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1006,h=720,fit=crop/A1aJePezkpfD2jEO/a-white-sofa-set-complements-the-classical-beauty-of-this-modern-living-room-A1aJe5Vzzji55eor.jpg" alt="Service Icon" />
-                                </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-12 no-padding">
+                        <div class="slider-slick">
+                            <div class="slider-service-image">
+                                <img src="images/porto/porto-1.jpg" alt="">
+                            </div>
+                            <div class="slider-service-image">
+                                <img src="images/porto/service-4.jpg" alt="">
+                            </div>
+                            <div class="slider-service-image">
+                                <img src="images/porto/porto-3.jpg" alt="">
+                            </div>
+                            <div class="slider-service-image">
+                                <img src="images/porto/porto-4.jpg" alt="">
+                            </div>
+                            <div class="slider-service-image">
+                                <img src="images/porto/porto-5.jpg" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="service-description">
-                        <h2 class="medium-title">Interior & Build</h2>
-                        <p class="medium-description">Wujudkan ruang impian Anda bersama kami, kdengan sentuhan desain modern klasik yang elegan dan nuansa alami yang menenangkan</p>
+                    <script>
+                        $('.slider-slick').slick({
+                            dots: false,
+                            infinite: true,
+                            speed: 400,
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 5000,
+                            arrows: true,
+                            cssEase: 'ease',
+                            spacebetween: 30,
+                            mobilefirst: true,
+                          
+                            responsive: [
+                                {
+                                    breakpoint: 1024,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                    }
+                                },
+                                {
+                                    breakpoint: 600,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1
+                                    }
+                                }
+                            ]
+                        });
+                    </script>
+                </div>
+               
+
+                <!-- <Slider /> -->
+                <div class="row justify-content-center flex-row-reverse align-items-center mt-20">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-12">
+                        <div class="service-description">
+                            <h2 class="medium-title mb-2 black-color">Architecture & Construction</h2>
+                            <p class="medium-description mb-2">Berpengalaman dalam berbagai proyek arsitektur dan konstruksi, mulai dari hunian pribadi hingga bangunan komersial—kami siap mewujudkan karya terbaik untuk setiap kebutuhan Anda</p>
+                            <p class="medium-description mb-3">Kami mengutamakan kualitas dan kepuasan pelanggan dalam setiap proyek yang kami tangani. Dengan tim profesional yang berpengalaman, kami siap memberikan solusi terbaik untuk kebutuhan desain interior dan konstruksi Anda.</p>
+                            <a href="" class="btn btn-primary">Hubungi Kami</a>
+                        </div>
                     </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-12 no-padding">
+                        <div class="slider-slicks">
+                            <div class="slider-service-image">
+                                <img src="images/porto/porto-6.jpg" alt="">
+                            </div>
+                            <div class="slider-service-image">
+                                <img src="images/porto/porto-2.jpg" alt="">
+                            </div>
+                            <div class="slider-service-image">
+                                <img src="images/porto/porto-9.jpg" alt="">
+                            </div>
+                            <div class="slider-service-image">
+                                <img src="images/porto/porto-10.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $('.slider-slicks').slick({
+                            dots: false,
+                            infinite: true,
+                            speed: 600,
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            arrows: true,
+                            cssEase: 'linear',
+                            spacebetween: 30,
+                            mobilefirst: true,
+                            responsive: [
+                                {
+                                    breakpoint: 1024,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                    }
+                                },
+                                {
+                                    breakpoint: 600,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1
+                                    }
+                                }
+                            ]
+                        });
+                    </script>
+                </div>
                 </div>
         </section>
-
-        <section id="our-services" class="" style="padding: 20px 0;">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="row service-image flex justify-content-center">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-12">
-                            <div class="single-service text-center mb-4">
-                                <div class="service-icon">
-                                    <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1006,h=720,fit=crop/A1aJePezkpfD2jEO/jardins-house-1-644x429-A3QJB3VPq0SN42Na.jpg" alt="Service Icon" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-12">
-                            <div class="single-service text-center mb-4">
-                                <div class="service-icon">
-                                    <img src="images/porto/porto-4.jpg" alt="Service Icon" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-description">
-                        <h2 class="medium-title">Architecture & Construction</h2>
-                        <p class="medium-description">Berpengalaman dalam berbagai proyek arsitektur dan konstruksi, mulai dari hunian pribadi hingga bangunan komersial—kami siap mewujudkan karya terbaik untuk setiap kebutuhan Anda</p>
-                    </div>
-                    
-                </div>
-        </section>
-
 
         <section class="padding-section bg-dark" >
             <div class="container-fluid image-slide">
@@ -99,35 +187,63 @@ import Slider from "../components/Slider.astro";
                 </div>
 
                 <!-- <Slider />  -->
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="single-service text-center mb-4">
-                            <div class="service-icon h-potrait">
-                                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=594,h=852,fit=crop,trim=211.4331983805668;145.1644204851752;237.86234817813764;343.11590296495956/A1aJePezkpfD2jEO/img_20230220_150913-mP4QXlxWOqI46BW8.jpg" alt="Service Icon" />
-                            </div>
+                <div class="">
+                    <div class="slick-only">
+                        <div class="service-icon h-potrait">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=594,h=852,fit=crop,trim=211.4331983805668;145.1644204851752;237.86234817813764;343.11590296495956/A1aJePezkpfD2jEO/img_20230220_150913-mP4QXlxWOqI46BW8.jpg" alt="Service Icon" />
+                        </div>
+                        <div class="service-icon h-potrait">
+                            <img src="images/porto/porto-8.jpg" alt="Service Icon" />
+                        </div>
+                        <div class="service-icon h-potrait">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=590,h=852,fit=crop,trim=3.5787037037037037;0;17.89351851851852;0/A1aJePezkpfD2jEO/frame-7-1-dOq4Xn12vvSD8yXE.jpg" alt="Service Icon" />
+                        </div>
+                        <div class="service-icon h-potrait">
+                            <img src="images/porto/service-4.jpg" alt="Service Icon" />
+                        </div>
+                        <div class="service-icon h-potrait">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=594,h=852,fit=crop,trim=0;175.95;0;0/A1aJePezkpfD2jEO/img_20230228_171313-1-A8546QwXeehZL7E7.jpg" alt="Service Icon" />
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="single-service text-center mb-4">
-                            <div class="service-icon h-potrait">
-                                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=594,h=852,fit=crop,trim=0;175.95;0;0/A1aJePezkpfD2jEO/img_20230228_171313-1-A8546QwXeehZL7E7.jpg" alt="Service Icon" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="single-service text-center mb-4">
-                            <div class="service-icon h-potrait">
-                                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=590,h=852,fit=crop,trim=3.5787037037037037;0;17.89351851851852;0/A1aJePezkpfD2jEO/frame-7-1-dOq4Xn12vvSD8yXE.jpg" alt="Service Icon" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="single-service text-center mb-4">
-                            <div class="service-icon h-potrait">
-                                <img src="images/porto/service-3.jpg" alt="Service Icon" />
-                            </div>
-                        </div>
-                    </div>
+                    <script>
+                        $('.slick-only').slick({
+                            dots: false,
+                            infinite: true,
+                            speed: 300,
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 3000,
+                            arrows: true,
+                            cssEase: 'ease-in-out',
+                            spacebetween: 30,
+                            mobilefirst: true,
+                            responsive: [
+                                {
+                                    breakpoint: 1024,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                    }
+                                },
+                                {
+                                    breakpoint: 600,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1
+                                    }
+                                }
+                            ]
+                        });
+                    </script>
                 </div>
             </div>
         </section>
@@ -138,7 +254,7 @@ import Slider from "../components/Slider.astro";
                 <div class="row justify-content-center ">
                     <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
                         <div class="section-title text-center mb-5">
-                            <h2 class="medium-title mb-4">Corporate & Institutional Clients</h2>
+                            <h2 class="medium-title mb-4 black-color">Corporate & Institutional Clients</h2>
                             <p class="description-section black-color">Dengan pengalaman yang luas, kami unggul dalam membangun kantor, apartemen, hotel, restoran, hingga proyek-proyek khusus lainnya untuk klien korporat dan institusi.</p>
                         </div>
                     </div>
