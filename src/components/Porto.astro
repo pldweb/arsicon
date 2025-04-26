@@ -1,0 +1,68 @@
+---
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+const images = [
+    '/images/porto/service-4.jpg',
+    '/images/porto/service-3.jpg',
+    '/images/porto/porto-3.jpg',
+    '/images/porto/porto-5.jpg',
+    '/images/porto/porto-6.jpg',
+];
+---
+
+<section class="padding-section bg-dark">
+  <div class="container-fluid image-slide">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
+        <div class="section-title text-center mb-5">
+          <h2 class="title-section white-color mb-2">Our Clients</h2>
+          <h2 class="medium-title white-color mb-5">Personal Clients</h2>
+          <p class="description-section white-color">Arsicon juga menghadirkan layanan desain interior dan konstruksi hunian yang dipersonalisasi, dirancang khusus untuk mencerminkan gaya dan kebutuhan pribadi Anda.</p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {images.map((src, idx) => (
+          <div class="swiper-slide">
+            <div class="single-service text-center mb-4">
+              <div class="service-icon h-potrait">
+                <img src={src} alt={`Service Icon ${idx + 1}`} class="w-full h-auto object-cover" />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<script type="module">
+  import Swiper, { Navigation, Pagination } from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.min.js';
+
+  // Inisialisasi Swiper
+  new Swiper('.swiper-container', {
+    modules: [Navigation, Pagination],
+    loop: true,
+    autoplay: {
+      delay: 3000, // Durasi transisi antar slide (3 detik)
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    slidesPerView: 4, // Tampilan 1 gambar per slide
+    speed: 800, // Transisi antar slide (0.8 detik)
+  });
+</script>

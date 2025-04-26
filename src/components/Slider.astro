@@ -1,0 +1,85 @@
+---
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+const images = [
+  'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=594,h=852,fit=crop,trim=211.4331983805668;145.1644204851752;237.86234817813764;343.11590296495956/A1aJePezkpfD2jEO/img_20230220_150913-mP4QXlxWOqI46BW8.jpg',
+  'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=594,h=852,fit=crop,trim=0;175.95;0;0/A1aJePezkpfD2jEO/img_20230228_171313-1-A8546QwXeehZL7E7.jpg',
+  'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=590,h=852,fit=crop,trim=3.5787037037037037;0;17.89351851851852;0/A1aJePezkpfD2jEO/frame-7-1-dOq4Xn12vvSD8yXE.jpg',
+  '/images/porto/service-3.jpg',
+];
+---
+
+<style>
+  .swiper-container {
+  max-width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.single-service .service-icon {
+  position: relative;
+  overflow: hidden;
+}
+
+.single-service img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.single-service img:hover {
+  transform: scale(1.1);
+}
+
+</style>
+
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    {images.map((src, idx) => (
+      <div class="swiper-slide">
+        <div class="single-service text-center mb-4">
+          <div class="service-icon h-potrait">
+            <img src={src} alt={`Service Icon ${idx + 1}`} class="w-full h-auto object-cover" />
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  <!-- Navigation buttons -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+
+
+  <script type="module">
+    import Swiper, { Navigation, Pagination } from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.min.js';
+  
+    // Inisialisasi Swiper
+    new Swiper('.swiper-container', {
+      modules: [Navigation, Pagination],
+      loop: true,
+      autoplay: {
+        delay: 3000, // Durasi transisi antar slide (3 detik)
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      slidesPerView: 1, // Tampilan 1 gambar per slide
+      speed: 800, // Transisi antar slide (0.8 detik)
+    });
+  </script>

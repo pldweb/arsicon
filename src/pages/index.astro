@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import "../style/global.css";
 import UseNavbar from "../components/UseNavbar.astro";
 import Footer from "../components/Footer.astro";
+import SlideShow from "../components/Slideshow.jsx";
+import Slider from "../components/Slider.astro";
 ---
 
 <Layout 
@@ -18,27 +20,7 @@ import Footer from "../components/Footer.astro";
 
     <main>
 
-        <section class="hero-area">
-            <div class="hero-slider">
-                <div class="single-slider slider-bg-1 d-flex align-items-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
-                                <div class="hero-content text-center">
-                                    <h1 class="title-hero white-color mb-4">Arsicon Interior  dan Kontraktor Syariah pertama di Indonesia</h1>
-                                    <h4 class="tagline-hero white-color mb-5">Membangun dengan Jujur, Amanah, <br> dan Profesionalisme</h4>
-                                    <!-- <p class="description-hero white-color mb-5">Contractor Syariah pertama di indonesia</p> -->
-                                    <div class="button-two" style="display: flex; gap: 15px; justify-content: center; align-items: center;">
-                                        <a class="btn btn-rounded white-color">Hubungi Kami</a>
-                                        <a class="btn btn-filled">Mulai Sekarang</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <SlideShow client:load/>
 
         <section id="our-services" class="padding-section">
             <div class="container-fluid">
@@ -50,6 +32,8 @@ import Footer from "../components/Footer.astro";
                         </div>
                     </div>
                 </div>
+
+                <!-- <Slider /> -->
                 <div class="row justify-content-center">
                     <div class="row service-image flex justify-content-center">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-xs-12">
@@ -71,7 +55,6 @@ import Footer from "../components/Footer.astro";
                         <h2 class="medium-title">Interior & Build</h2>
                         <p class="medium-description">Wujudkan ruang impian Anda bersama kami, kdengan sentuhan desain modern klasik yang elegan dan nuansa alami yang menenangkan</p>
                     </div>
-                    
                 </div>
         </section>
 
@@ -103,17 +86,19 @@ import Footer from "../components/Footer.astro";
         </section>
 
 
-        <section class="padding-section">
+        <section class="padding-section bg-dark" >
             <div class="container-fluid image-slide">
                 <div class="row justify-content-center ">
                     <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
                         <div class="section-title text-center mb-5">
-                            <h2 class="title-section black-color mb-2">Our Clients</h2>
-                            <h2 class="medium-title mb-5">Personal Clients</h2>
-                            <p class="description-section black-color">Arsicon juga menghadirkan layanan desain interior dan konstruksi hunian yang dipersonalisasi, dirancang khusus untuk mencerminkan gaya dan kebutuhan pribadi Anda.</p>
+                            <h2 class="title-section white-color mb-2">Our Clients</h2>
+                            <h2 class="medium-title white-color mb-5">Personal Clients</h2>
+                            <p class="description-section white-color">Arsicon juga menghadirkan layanan desain interior dan konstruksi hunian yang dipersonalisasi, dirancang khusus untuk mencerminkan gaya dan kebutuhan pribadi Anda.</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- <Slider />  -->
                 <div class="row justify-content-center">
                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                         <div class="single-service text-center mb-4">
