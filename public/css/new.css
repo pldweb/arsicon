@@ -324,6 +324,7 @@ section.padding-section {
         object-fit: cover;
         border-radius: 15px;
         overflow: hidden;
+        max-height: 300px;
         min-height: 313px;
     }
 
@@ -353,6 +354,10 @@ section.padding-section {
     .tagline-hero {
         font-size: 20px;
         font-weight: 400;
+    }
+
+    .image-portfolio {
+        margin-bottom: 10px;
     }
 }
 
