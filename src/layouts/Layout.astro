@@ -6,6 +6,7 @@ export interface Props {
   seo_description: string;
   seo_domain: string;
   seo_image: string;
+  seo_keyword: string;
 }
 
 const { title } = Astro.props;
@@ -13,6 +14,7 @@ const { seo_title } = Astro.props;
 const { seo_description } = Astro.props;
 const { seo_domain } = Astro.props;
 const { seo_image } = Astro.props;
+const { seo_keyword } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -25,7 +27,7 @@ const { seo_image } = Astro.props;
     <meta name="theme-color" content="#3b82f6" />
     <meta name="title" content={seo_title} />
     <meta name="description" content={seo_description} />
-    <meta name="keywords" content="Digital Agency, Social Agency, Jasa Kelola Instagram, Jasa Branding, Jasa Website" />
+    <meta name="keywords" content={seo_keyword} />
     <meta name="author" content="Muhammad Rivaldi Fanani" />
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -35,7 +37,7 @@ const { seo_image } = Astro.props;
     <meta itemprop="url" content={seo_domain}>
 
     <meta name="author" content="Muhammad Rivaldi Fanani">
-    <meta name="keywords" content="Digital Agency, Social Agency, Jasa Kelola Instagram, Jasa Branding, Jasa Website">
+    <meta name="keywords" content={seo_keyword}>
 
     <meta itemprop="name" content={seo_title}>
     <meta itemprop="description" content={seo_description}>
@@ -58,7 +60,7 @@ const { seo_image } = Astro.props;
     <meta property="og:url" content={seo_domain}/>
     <meta property="og:description" content={seo_description} />
     <meta property="og:locale" content="id_ID" />
-    <meta property="og:site_name" content="Rinkweb" />
+    <meta property="og:site_name" content="Arsicon" />
 
     <link rel="icon" type="image/png" href={seo_image}>
 
@@ -70,7 +72,6 @@ const { seo_image } = Astro.props;
     <link rel="apple-touch-icon" sizes="180x180" href={seo_image}>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="description" content="Jasa pembuatan website profesional dengan harga terjangkau. Dapatkan website berkualitas untuk bisnis Anda.">
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="img/favicon.ico" type="img/png" />
