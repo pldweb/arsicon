@@ -2447,7 +2447,7 @@ ul.social-box li a:hover {
 
 .about-area.one {
     background: #161616;
-    padding: 183px 0 137px;
+    padding: 123px 0 50px;
     position: relative;
     z-index: 1;
 }
@@ -2503,6 +2503,10 @@ ul.social-box li a:hover {
     width: 100%;
     max-height: 450px;
     object-fit: cover;
+}
+
+#latar-belakang.about-area.one .about-thumb img {
+    max-height: 650px;
 }
 
 .about-area.one .about-button {

@@ -366,3 +366,15 @@ footer {
 .template-header.navbar-left .nav-menu {
     margin-left: 180px;
 }
+
+.single-project-box img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .project-area.one .project-thumb.upper img {
+        width: 100%;
+        height: auto;
+    }   
+}
